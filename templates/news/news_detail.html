@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News detail page</title>
+</head>
+<body>
+    <a href="{% url 'home-page'  %}">Ortga qaytish</a>
+    <h1>{{ news.title }}</h1>
+    <p>Published date: {{ news.publish_time }}</p>
+    <p>{{ news.body | linebreaks }}</p>
+    <img src="{{ news.image.url }}" alt="Rasm mavjud emas">
+</body>
+</html>
